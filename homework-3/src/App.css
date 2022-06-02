@@ -1,0 +1,100 @@
+.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.footer{
+  background-color:deepskyblue;
+  height: 8vh;
+  width:100%;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+#msgInput{
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+}
+.chatArea{
+  background-image: url('../public/bimage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-blend-mode: normal;
+}
+.chat{
+  background-color: #F8F8F8;
+  max-width: 55%;
+  height: auto;
+  padding: 7px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  text-overflow: ;
+}
+.chat:hover,.mychat:hover{
+  opacity: 0.9;
+}
+.mychat{
+  background-color: lightskyblue;
+  max-width: 55%;
+  height: auto;
+  padding: 7px;
+  margin-bottom: 18px;
+  margin-left: 30%;
+  border-radius: 10px;
+}
+
+.paper{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 10vh;
+  width:50vw;
+  padding-top: 5%;
+  height: 40vh;
+}
+
+.contants{
+  overflow-y: scroll;
+}
+#contactList:hover {
+  background-color:#3366FF;
+
+}
+#search{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding-left: 15px;
+  padding-right:20%;
+  padding-top: 15px;
+}
+#search input{
+height:30px;
+}
+.col2{
+  height:90vh;
+  width:69%; 
+
+}
+.open{
+  display: block;
+  overflow-y: scroll;
+  z-index: 2;
+}
+
+@media only screen and (max-width:800px){
+  .contants{
+    display: none;
+  }
+  .col2{
+    width:100%;
+  }
+  *{
+    font-size: 12px;
+  }
+}
